@@ -22,14 +22,23 @@ public class uc1employee {
 				int win =(int) Math.floor(Math.random()*10)%2;
 				if (win==1) 
 				{
-					System.out.println(" employee is present");
+					System.out.println(" employeer is present");
 					total=hour*wage;
-					System.out.println(" the total wage for the employee todays is "+ total);
+					System.out.println(" the total wage for the employeer todays is "+ total);
 				}
 				else if(win==0)
 				{
-					System.out.println(" employee is absent");
+					
+					System.out.println(" employeer is absent");
+					System.out.println(" please bring the part time worker");
+					int hr=8;
+					wage=25;
+					total=hr*wage;
+					
+					System.out.println(" the total wage for the part time eemployeer todays is "+ total);
+					
 				}
+				
 			}
 			
 		
