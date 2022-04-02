@@ -1,6 +1,6 @@
 package ass8;
 
-
+import java.util.Scanner;
 
 public class uc1employee {
 
@@ -18,24 +18,22 @@ public class uc1employee {
 				
 				public static void m1()
 				{
-					int hour=20,wage=20,total;
+					int hour=160,wage,total;
 				int win =(int) Math.floor(Math.random()*10)%2;
 				if (win==1) 
 				{
 					System.out.println(" employeer is present");
+					Scanner s = new Scanner(System.in);
+					System.out.println("enter the amount per hour for an employeer ");
+					wage = s.nextInt();
+					
 					total=hour*wage;
-					System.out.println(" the total wage for the employeer todays is "+ total);
+					System.out.println(" the total wage for the employeer this month is  "+ total);
 				}
 				else if(win==0)
 				{
 					
-					System.out.println(" employeer is absent");
-					System.out.println(" please bring the part time worker");
-					int hr=8;
-					wage=25;
-					total=hr*wage;
-					
-					System.out.println(" the total wage for the part time eemployeer todays is "+ total);
+					System.out.println("  sorry today employeer is absent");
 					
 				}
 				
